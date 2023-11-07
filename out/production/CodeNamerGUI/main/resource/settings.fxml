@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" prefHeight="140.0" prefWidth="250.0" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.SettingsController">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+         <children>
+            <CheckBox fx:id="capitalizedCB" mnemonicParsing="false" onAction="#setCapitalized" selected="true" text="Capitalized" />
+            <CheckBox fx:id="exceptFirstCB" mnemonicParsing="false" onAction="#setExceptFirst" prefHeight="17.0" prefWidth="127.0" selected="true" text="Except first" />
+            <HBox prefHeight="12.0" prefWidth="300.0" spacing="5.0">
+               <children>
+                  <Label text="Delimiter" />
+                  <TextField fx:id="delimiterTF" onAction="#setDelimiter" onInputMethodTextChanged="#setDelimiter" prefHeight="25.0" prefWidth="33.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</GridPane>
